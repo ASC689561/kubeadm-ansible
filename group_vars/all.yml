@@ -17,16 +17,16 @@ service_cidr: "10.96.0.0/12"
 pod_network_cidr: "10.244.0.0/16"
 
 # Network implementation('flannel', 'calico')
-network: calico
+network: flannel
 
 # Change this to an appropriate interface, preferably a private network.
 # For example, on DigitalOcean, you would use eth1 as that is the default private network interface.
 network_interface: ""
 
-enable_dashboard: yes
+enable_dashboard: no
 
 # A list of insecure registries you might need to define
-insecure_registries: []
+insecure_registries: ['s167.com:30100']
 # insecure_registries: ['gcr.io']
 
 systemd_dir: /lib/systemd/system
