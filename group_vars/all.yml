@@ -11,9 +11,9 @@ init_opts: ""
 # Any other additional opts you want to add..
 #kubeadm_opts: ""
 # For example:
-kubeadm_opts: '--apiserver-cert-extra-sans "k8s.domain.com,10.8.0.1"'
+kubeadm_opts: '--apiserver-cert-extra-sans "10.8.0.1,167.114.98.168"'
 
-service_cidr: "10.96.0.0/12"
+#service_cidr: "10.96.0.0/12"
 pod_network_cidr: "10.244.0.0/16"
 
 # Network implementation('flannel', 'calico')

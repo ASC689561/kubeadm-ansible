@@ -7,8 +7,7 @@
 - name: Init Kubernetes cluster
   when: reset_cluster is succeeded
   shell: |
-    kubeadm init --service-cidr {{ service_cidr }} \
-                 --kubernetes-version {{ kube_version }} \
+    kubeadm init --kubernetes-version {{ kube_version }} \
                  --pod-network-cidr {{ pod_network_cidr }} \
                  --token {{ token }} \
                  --ignore-preflight-errors=NumCPU \
